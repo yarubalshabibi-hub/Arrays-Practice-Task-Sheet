@@ -1,4 +1,6 @@
-﻿namespace Arrays_Practice_Task_Sheet
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Arrays_Practice_Task_Sheet
 {
     internal class Program
     {
@@ -34,6 +36,31 @@
         }
 
 
+
+           public static void prices()
+        {
+            double[] prices = { 4.99, 12.50, 7.25, 19.99, 3.75 };
+
+
+            Console.WriteLine("Product prices:");
+            for (int i = 0; i < prices.Length; i++)
+            {
+                Console.WriteLine("Product " + (i + 1) + ": " + prices[i]);
+            }
+
+
+            double target = 7.25;
+            int index = Array.IndexOf(prices, target);
+
+            if (index != -1)
+                Console.WriteLine("Price " + target + " found at index " + index);
+            else
+                Console.WriteLine("Price " + target + " not found");
+        }
+
+
+
+
         static void Main(string[] args)
         {
 
@@ -49,8 +76,8 @@
             Console.WriteLine("10.");
 
             Console.WriteLine("select option");
-            int option = int.Parse( Console.ReadLine());
-            switch(option)
+            int option = int.Parse(Console.ReadLine());
+            switch (option)
             {
                 case 1:
                     temp1();
@@ -58,14 +85,31 @@
                 case 2:
                     score();
                     break;
-                
-                    
-            }
-           
+                case 3:
+                    prices();
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 10:
+                    break;
 
-            
+            }
+
+
+
         }
 
+    
 
 
 
