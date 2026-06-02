@@ -83,71 +83,93 @@ namespace Arrays_Practice_Task_Sheet
 
 
 
-        static void Main(string[] args)
+        public static void grade()
         {
+            int[] grades = { 72, 88, 95, 60, 45, 78, 91, 83, 55, 67 };
 
+            Array.Sort(grades);
 
-            Console.WriteLine("select one option");
-            Console.WriteLine("1.");
-            Console.WriteLine("2.");
-            Console.WriteLine("3.");
-            Console.WriteLine("4.");
-            Console.WriteLine("5.");
-            Console.WriteLine("6.");
-            Console.WriteLine("7.");
-            Console.WriteLine("8.");
-            Console.WriteLine("9.");
-            Console.WriteLine("10.");
+            Array.Reverse(grades);
 
-            int option = int.Parse(Console.ReadLine());
-            switch (option)
+            Console.WriteLine("Grade Report (Highest to Lowest):");
+            for (int i = 0; i < grades.Length; i++)
             {
-                case 1:
-                    temp1();
-                    break;
-
-                case 2:
-                    score();
-                    break;
-
-                case 3:
-                    prices();
-                    break;
-
-                case 4:
-                    FinishTimes();
-                    break;
-
-                case 5:
-                    break;
-
-                case 6:
-                    break;
-
-                case 7:
-                    break;
-
-                case 8:
-                    break;
-
-                case 9:
-                    break;
-
-                case 10:
-                    break;
+                Console.WriteLine("Rank " + (i + 1) + ": " + grades[i]);
 
             }
 
 
 
+            static void Main(string[] args)
+            {
+
+
+                Console.WriteLine("select one option please: ");
+                Console.WriteLine("1.");
+                Console.WriteLine("2.");
+                Console.WriteLine("3.");
+                Console.WriteLine("4.");
+                Console.WriteLine("5.");
+                Console.WriteLine("6.");
+                Console.WriteLine("7.");
+                Console.WriteLine("8.");
+                Console.WriteLine("9.");
+                Console.WriteLine("10.");
+                Console.WriteLine("11.");
+
+                int option = int.Parse(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        temp1();
+                        break;
+
+                    case 2:
+                        score();
+                        break;
+
+                    case 3:
+                        prices();
+                        break;
+
+                    case 4:
+                        FinishTimes();
+                        break;
+
+                    case 5:
+                        grade();
+                        break;
+
+                    case 6:
+                        break;
+
+                    case 7:
+                        break;
+
+                    case 8:
+                        break;
+
+                    case 9:
+                        break;
+
+                    case 10:
+                        break;
+                    case 11:
+                        Console.WriteLine("EXIT");
+                        break;
+
+                }
+
+
+
+            }
+
+
+
+
+
+
         }
-
-    
-
-
-
-
-
 
 
     }
