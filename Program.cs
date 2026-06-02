@@ -71,13 +71,13 @@ namespace Arrays_Practice_Task_Sheet
             }
 
             Array.Sort(finishTimes);
-            Console.WriteLine("\nSorted finish times (fastest first):");
+            Console.WriteLine("Sorted finish times (fastest first):");
             foreach (int time in finishTimes)
             {
                 Console.WriteLine(time + " seconds");
             }
 
-            Console.WriteLine("\nTotal participants: " + finishTimes.Length);
+            Console.WriteLine("Total participants: " + finishTimes.Length);
 
         }
 
