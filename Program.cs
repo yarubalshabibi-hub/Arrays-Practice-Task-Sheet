@@ -60,10 +60,34 @@ namespace Arrays_Practice_Task_Sheet
 
 
 
+            public static void FinishTimes()
+        {
+            int[] finishTimes = { 312, 285, 340, 298, 265, 320, 275, 355 };
+
+            Console.WriteLine("Original finish times:");
+            foreach (int time in finishTimes)
+            {
+                Console.WriteLine(time + " seconds");
+            }
+
+            Array.Sort(finishTimes);
+            Console.WriteLine("\nSorted finish times (fastest first):");
+            foreach (int time in finishTimes)
+            {
+                Console.WriteLine(time + " seconds");
+            }
+
+            Console.WriteLine("\nTotal participants: " + finishTimes.Length);
+
+        }
+
+
 
         static void Main(string[] args)
         {
 
+
+            Console.WriteLine("select one option");
             Console.WriteLine("1.");
             Console.WriteLine("2.");
             Console.WriteLine("3.");
@@ -75,31 +99,40 @@ namespace Arrays_Practice_Task_Sheet
             Console.WriteLine("9.");
             Console.WriteLine("10.");
 
-            Console.WriteLine("select option");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
                 case 1:
                     temp1();
                     break;
+
                 case 2:
                     score();
                     break;
+
                 case 3:
                     prices();
                     break;
+
                 case 4:
+                    FinishTimes();
                     break;
+
                 case 5:
                     break;
+
                 case 6:
                     break;
+
                 case 7:
                     break;
+
                 case 8:
                     break;
+
                 case 9:
                     break;
+
                 case 10:
                     break;
 
