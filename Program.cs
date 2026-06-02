@@ -115,8 +115,9 @@ namespace Arrays_Practice_Task_Sheet
                 Console.WriteLine("8.");
                 Console.WriteLine("9.");
                 Console.WriteLine("10.");
-                Console.WriteLine("11.");
+            }
 
+            { 
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -154,9 +155,7 @@ namespace Arrays_Practice_Task_Sheet
 
                     case 10:
                         break;
-                    case 11:
-                        Console.WriteLine("EXIT");
-                        break;
+                   
 
                 }
 
